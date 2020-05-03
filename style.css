@@ -1,5 +1,5 @@
 body{
-    background-color: orchid;
+    background-color: black;
     margin: 0;
     padding:0;
 }
@@ -26,7 +26,7 @@ h1{
 
 .questions{
     padding: 15px;
-    background-color: orchid;
+    background-color: black;
     border-radius: 12px;
     color: white;
     font-size: 20px;
@@ -50,15 +50,10 @@ h1{
 .options ul li{
     display: inline-block;
     width: 48%;
-    background-color:orchid;
+    background-color:black;
     padding: 15px;
     margin-top: 30px;
     border-radius: 12px;
-}
-
-.options ul li:active{
-    background-color: pink;
-
 }
 
 .options ul li.correct{
@@ -71,7 +66,7 @@ h1{
 
 .bottom{
     float: left;
-    width: 130%;
+    width: 145%;
     padding: 25px 0px;
 }
 
@@ -82,9 +77,9 @@ h1{
 }
 
 .score span{
-    background-color: orchid;
+    background-color: black;
     color: white;
-    padding: 11px  20px;
+    padding: 12px  20px;
     border-radius: 12px;
 }
 
@@ -94,8 +89,8 @@ h1{
 }
 
 .next button {
-    padding: 12px 40px;
-    background-color: orchid;
+    padding: 12px 20px;
+    background-color: black;
     color: white;
     border: none;
     border-radius: 12px;
@@ -116,7 +111,6 @@ h1{
         padding: 25px 0px;
     }
     .options ul li{
-        display: inline-block;
         width: 100%;
     }
 }
