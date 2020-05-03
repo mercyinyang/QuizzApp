@@ -33,6 +33,7 @@ h1{
 }
 
 .options{
+    width: 100%;
     float: left;
     color: white;
 }
@@ -58,6 +59,14 @@ h1{
 .options ul li:active{
     background-color: pink;
 
+}
+
+.options ul li.correct{
+    background-color: #0fd40f;
+}
+
+.options ul li.wrong{
+    background-color: red;
 }
 
 .nav{
