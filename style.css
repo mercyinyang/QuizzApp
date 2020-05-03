@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: white;
     margin: 0;
     padding:0;
 }
@@ -12,13 +12,13 @@ h1{
     text-align: center;
     margin-top: 50px;
     font-style: italic;
-    color: white;
+    color: black;
 }
 
 .container{
     height: 400px;
     width: 600px;
-    background-color: white;
+    background-color: black;
     margin: 30px auto;
     border-radius: 12px;
     padding: 40px;
@@ -26,16 +26,17 @@ h1{
 
 .questions{
     padding: 15px;
-    background-color: black;
+    background-color: white;
     border-radius: 12px;
-    color: white;
+    color: black;
     font-size: 20px;
 }
 
 .options{
     width: 100%;
     float: left;
-    color: white;
+    color: black;
+    font-size: 18px;
 }
 
 .options ul{
@@ -50,9 +51,9 @@ h1{
 .options ul li{
     display: inline-block;
     width: 48%;
-    background-color:black;
-    padding: 15px;
-    margin-top: 30px;
+    background-color:white;
+    padding: 12px;
+    margin-top: 20px;
     border-radius: 12px;
 }
 
@@ -64,34 +65,28 @@ h1{
     background-color: red;
 }
 
-.bottom{
-    float: left;
-    width: 145%;
-    padding: 25px 0px;
-}
-
 .score{
-    float: left;
-    width: 60%;
-    line-height: 50px;
+    line-height: 46px;
+    float: right;
+    color: white;
+
 }
 
 .score span{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 12px  20px;
     border-radius: 12px;
 }
 
 .next{
     float: left;
-    width: 40%;
 }
 
 .next button {
     padding: 12px 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -106,8 +101,7 @@ h1{
         padding: 20px;
     }
     .bottom{
-        float: left;
-        width: 95%;
+        width: 145%;
         padding: 25px 0px;
     }
     .options ul li{

@@ -31,11 +31,11 @@ var btn = document.getElementById('button');
 	        	}
         	else{
         		card.innerHTML = "Quiz over.....Well done!";
+                btn.innerHTML = "Try again!";
         		option_1.style.display="none";
         		option_2.style.display="none";
         		option_3.style.display="none";
         		option_4.style.display="none";
-        		btn.style.display="none";
         	}
         },
 	     check:function(options){
@@ -48,7 +48,8 @@ var btn = document.getElementById('button');
 	    	}
 	    	else{
 	    		options.className = "wrong";
-	    	}
+                document.getElementById(`option_${this.questions[this.index].answer}`).className="correct";
+            }
     	},
     	next:function(){
     		this.index++;
@@ -57,12 +58,12 @@ var btn = document.getElementById('button');
     	notClickAble:function(){
     		for (let i = 0; i<option_card.children.length; i++) {
     			option_card.children[i].style.pointerEvents="none";
-    		}
+            }
     	},
     	clickAble:function(){
     		for (let i = 0; i<option_card.children.length; i++) {
     			option_card.children[i].style.pointerEvents="auto";
-    			option_card.children[i].className=''
+    			option_card.children[i].className='';
     		}
     	},
 	    score:0,
