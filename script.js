@@ -43,6 +43,7 @@ var btn = document.getElementById('button');
         },
 	     check:function(options){
 	    	var id=options.id.split('');
+            this.questions[this.index].attempted = true;
 	    	if(id[id.length-1]==this.questions[this.index].answer){
 	    		this.score++;
 	    		score_card.innerHTML = this.score+"/"+this.questions.length;
