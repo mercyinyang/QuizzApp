@@ -10,15 +10,15 @@ var btn = document.getElementById('button');
 
     var app={
         questions:[
-		            {q:'Which of these is the longest river in Africa?', options: ['Congo River','River Nile','Zambezi River','River Niger'], answer:2},
+		            {attempted:false, q:'Which of these is the longest river in Africa?', options: ['Congo River','River Nile','Zambezi River','River Niger'], answer:2},
 
-		            {q:'Which of these is the highest mountain in the world?', options: ['Mount Lhotse','Mount K2','Mount Kilimanjaro','Mount Everest'], answer:4},
+		            {attempted:false, q:'Which of these is the highest mountain in the world?', options: ['Mount Lhotse','Mount K2','Mount Kilimanjaro','Mount Everest'], answer:4},
 
-		            {q:'Which of these is the largest continent in the world?', options: ['Asia','Australia','Europe','Africa'], answer:1},
+		            {attempted:false, q:'Which of these is the largest continent in the world?', options: ['Asia','Australia','Europe','Africa'], answer:1},
 
-		            {q:'Which of these is the largest planet?', options: ['Mercury','Jupiter','Earth','Saturn'], answer:2},
+		            {attempted:false, q:'Which of these is the largest planet?', options: ['Mercury','Jupiter','Earth','Saturn'], answer:2},
 
-		            {q:'Which of these is the largest ocean in the world?', options: ['Pacific Ocean','Indian Ocean','Arctic Ocean','Atlantic Ocean'], answer:3}
+		            {attempted:false, q:'Which of these is the largest ocean in the world?', options: ['Pacific Ocean','Indian Ocean','Arctic Ocean','Atlantic Ocean'], answer:3}
         ],
         index:0,
         load: function(){
@@ -55,8 +55,11 @@ var btn = document.getElementById('button');
             }
     	},
     	next:function(){
-    		this.index++;
-    		this.load();
+            if (this.questions[this.index].attempted!==true){
+                return alert("Please select an option");
+            }
+            this.index++;
+            this.load();		
     	},
     	notClickAble:function(){
     		for (let i = 0; i<option_card.children.length; i++) {
