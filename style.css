@@ -53,7 +53,7 @@ h1{
     width: 48%;
     background-color:white;
     padding: 12px;
-    margin-top: 20px;
+    margin: 20px 0px;
     border-radius: 12px;
 }
 
@@ -91,18 +91,15 @@ h1{
     border-radius: 12px;
     cursor: pointer;
     font-size: 15px;
+    outline: none;
 }
 
 @media screen and (max-width: 601px) {
     .container{
-        height: 600px;
+        height: 580px;
         width: 300px;
         margin: 20px auto;
         padding: 20px;
-    }
-    .bottom{
-        width: 145%;
-        padding: 25px 0px;
     }
     .options ul li{
         width: 100%;

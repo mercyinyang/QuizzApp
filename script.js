@@ -36,6 +36,9 @@ var btn = document.getElementById('button');
         		option_2.style.display="none";
         		option_3.style.display="none";
         		option_4.style.display="none";
+                btn.addEventListener("click",()=>{
+                    location.reload();
+                })
         	}
         },
 	     check:function(options){
@@ -82,3 +85,4 @@ var btn = document.getElementById('button');
     	app.next();
     	app.clickAble();
     }
+    
